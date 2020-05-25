@@ -12,7 +12,7 @@ In order to deploy pods to the [Google Kubernetes Engine](https://cloud.google.c
     docker tag wurstmeister/kafka:2.12-2.5.0 gcr.io/blog-261010/wurstmeister/kafka:2.12-2.5.0
     docker push gcr.io/blog-261010/wurstmeister/kafka:2.12-2.5.0
     
-##Deploying pods and services
+## Deploying pods and services
 
     kubectl apply -f ./kafka/deployments/kafka-deployment.yaml
     kubectl apply -f ./kafka/deployments/zookeeper-deployment.yaml
@@ -20,7 +20,7 @@ In order to deploy pods to the [Google Kubernetes Engine](https://cloud.google.c
     kubectl apply -f ./kafka/services/kafka-service.yaml
 
 
-##Managing topics
+## Managing topics
 Get your kafka pod name using
 
     kubectl get pods
